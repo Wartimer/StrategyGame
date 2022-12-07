@@ -16,6 +16,11 @@ namespace _Root.Code.UserControlSystem
         private void OnSelected(ISelectable selected)
         {
             if (selected.IsOutlined) return;
+            if (selected != _selectedValue.CurrentValue)
+            {
+                _selectedValue.CurrentValue.ToggleOutLine();
+                return;
+            }
             selected.ToggleOutLine();
         }
     }

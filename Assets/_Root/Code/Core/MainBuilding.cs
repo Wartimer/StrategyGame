@@ -9,9 +9,10 @@ public class MainBuilding : MonoBehaviour, IUnitProducer, ISelectable
     [SerializeField] private Outline _outline;
     [Space]
     [SerializeField] private Vector3 _offset;
+    [SerializeField] private float _health;
     [SerializeField] private float _maxHealth = 1000;
     
-    private float _health = 1000;
+    
     private bool _isOutlined;
     public float Health => _health;
     public float MaxHealth => _maxHealth;
