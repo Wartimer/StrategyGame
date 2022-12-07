@@ -10,5 +10,6 @@ namespace _Root.Code.Abstractions
             
             bool IsOutlined { get; }
             void ToggleOutLine();
+            
     }
 }

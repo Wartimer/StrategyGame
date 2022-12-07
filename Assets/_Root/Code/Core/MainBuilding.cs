@@ -17,15 +17,13 @@ public class MainBuilding : MonoBehaviour, IUnitProducer, ISelectable
     public float Health => _health;
     public float MaxHealth => _maxHealth;
     public Sprite Icon => _icon;
-    
     public bool IsOutlined => _isOutlined;
+    
 
     public void ToggleOutLine()
     {
-        var enabled1 = _outline.enabled;
-        enabled1 = !enabled1;
-        _outline.enabled = enabled1;
-        _isOutlined = enabled1;
+        _isOutlined = !_outline.enabled;
+        _outline.enabled = _isOutlined;
     }
 
     public void ProduceUnit()

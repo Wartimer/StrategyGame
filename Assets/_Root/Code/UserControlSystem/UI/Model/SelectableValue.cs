@@ -12,9 +12,6 @@ namespace _Root.Code.UserControlSystem
 
         public void SetValue(ISelectable value)
         {
-            if (value != CurrentValue && CurrentValue != null)
-                CurrentValue.ToggleOutLine();
-
             CurrentValue = value;
             OnSelected?.Invoke(value);
         }
