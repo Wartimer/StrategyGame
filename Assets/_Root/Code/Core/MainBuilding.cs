@@ -19,11 +19,6 @@ public sealed class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISe
     public Sprite Icon => _icon;
     public bool IsOutlined => _isOutlined;
 
-    public void ToggleOutLine()
-    {
-        _isOutlined = !_outline.enabled;
-        _outline.enabled = _isOutlined;
-    }
 
     public override void ExecuteSpecificCommand(IProduceUnitCommand command)
     {
