@@ -18,6 +18,12 @@ namespace _Root.Code.UserControlSystem
         private void OnSelected(ISelectable selected)
         {
             if (selected == _currentSelected) return;
+            if (selected == null)
+            {
+                _currentSelected.ToggleOutLine();
+                _currentSelected = null;
+                return;
+            }
             
             if (selected != _currentSelected)
             {

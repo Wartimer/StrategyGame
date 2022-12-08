@@ -397,6 +397,10 @@ GameObject:
   - component: {fileID: 95206231959375140}
   - component: {fileID: 844270182}
   - component: {fileID: 8190326098405322843}
+  - component: {fileID: 4370024970689141935}
+  - component: {fileID: -5084873385507321081}
+  - component: {fileID: 5861158116742336366}
+  - component: {fileID: 3416574674413003368}
   m_Layer: 0
   m_Name: FreeLichPBR
   m_TagString: Untagged
@@ -470,6 +474,54 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.98
   m_Center: {x: 0, y: 0.91, z: 0}
+--- !u!114 &4370024970689141935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500939411536426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b96fe95dafb94f67b145003971db4091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5084873385507321081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500939411536426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20a0b7426ad4f81ad2a47fc9d8a149f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5861158116742336366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500939411536426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c32bf02453c4a2ca74e621ec7f7a52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3416574674413003368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500939411536426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0f55a5261e40a88b90ebfd3512662d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1537370055453520
 GameObject:
   m_ObjectHideFlags: 0
