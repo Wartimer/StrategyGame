@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3892128042037695563}
   - component: {fileID: 2153270264148411977}
   - component: {fileID: 2132063959477714465}
+  - component: {fileID: 6240297423020205583}
   m_Layer: 0
   m_Name: Tower Mage
   m_TagString: Untagged
@@ -72,12 +73,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1432aa4e0b29904c88c8a9f9dc33b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _unitPrefab: {fileID: 1500939411536426, guid: 274c4c35ed05ea14c87492064b3cadfd, type: 3}
   _unitsParent: {fileID: 0}
   _icon: {fileID: 21300000, guid: 926dfa75b16d75047a9d44b72334db0d, type: 3}
   _outline: {fileID: 4454293713651609014}
   _offset: {x: 8, y: 0, z: 0}
-  _maxHealth: 1000
+  _health: 400
+  _maxHealth: 500
 --- !u!65 &2132063959477714465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91,6 +92,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 1.5, z: 0.7}
   m_Center: {x: 0, y: 0.75, z: 0}
+--- !u!114 &6240297423020205583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3892128042028200521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6750ab0ea6c040d085378bbaa6270e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _outlineComponents:
+  - {fileID: 8570057654453634579}
+  - {fileID: 4454293713651609014}
+  - {fileID: 3751868771235692389}
+  - {fileID: 4675519441883837814}
 --- !u!1 &3892128042028201539
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,6 +120,7 @@ GameObject:
   - component: {fileID: 3892128042027914557}
   - component: {fileID: 3892128042027071647}
   - component: {fileID: 3892128042025959059}
+  - component: {fileID: 8570057654453634579}
   m_Layer: 0
   m_Name: Crystal
   m_TagString: Untagged
@@ -174,6 +193,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8570057654453634579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3892128042028201539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.31072462, g: 1, b: 0.2688679, a: 1}
+  outlineWidth: 7.07
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3892128042028204977
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +305,7 @@ GameObject:
   - component: {fileID: 3892128042027930167}
   - component: {fileID: 3892128042027149271}
   - component: {fileID: 3892128042026019191}
+  - component: {fileID: 4675519441883837814}
   m_Layer: 0
   m_Name: Blocks
   m_TagString: Untagged
@@ -340,6 +378,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4675519441883837814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3892128042028210969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.31072462, g: 1, b: 0.2688679, a: 1}
+  outlineWidth: 7.07
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3892128042028223849
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,14 +570,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3892128042028244119}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 4
+  outlineMode: 0
   outlineColor: {r: 0.31072462, g: 1, b: 0.2688679, a: 1}
-  outlineWidth: 2.66
+  outlineWidth: 7.07
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -536,6 +592,7 @@ GameObject:
   - component: {fileID: 3892128042027938205}
   - component: {fileID: 3892128042027150051}
   - component: {fileID: 3892128042026035097}
+  - component: {fileID: 3751868771235692389}
   m_Layer: 0
   m_Name: Woods
   m_TagString: Untagged
@@ -608,3 +665,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3751868771235692389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3892128042028263455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.31072462, g: 1, b: 0.2688679, a: 1}
+  outlineWidth: 7.07
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

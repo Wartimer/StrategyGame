@@ -9,6 +9,5 @@ namespace _Root.Code.Abstractions
             Sprite Icon { get; }
             
             bool IsOutlined { get; }
-            void ToggleOutLine();
     }
 }

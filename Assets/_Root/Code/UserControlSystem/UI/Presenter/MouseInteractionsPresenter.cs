@@ -1,6 +1,7 @@
 using System.Linq;
 using _Root.Code.Abstractions;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace _Root.Code.UserControlSystem
 {
@@ -8,6 +9,7 @@ namespace _Root.Code.UserControlSystem
     {
         [SerializeField] private Camera _camera;
         [SerializeField] private SelectableValue _selectedObject;
+        [SerializeField] private EventSystem _eventSystem;
         
         private void Update()
         {
@@ -16,7 +18,10 @@ namespace _Root.Code.UserControlSystem
                 return;
             }
 
-            var hits = Physics.RaycastAll(_camera.ScreenPointToRay(Input.mousePosition));
+            if (_eventSystem.IsPointerOverGameObject()) return;
+
+
+                var hits = Physics.RaycastAll(_camera.ScreenPointToRay(Input.mousePosition));
 
             if (hits.Length == 0)
             {
@@ -28,7 +33,10 @@ namespace _Root.Code.UserControlSystem
                 .FirstOrDefault(c => c != null);
 
             if (selectable == null)
+            {
+                _selectedObject.SetValue(null);
                 return;
+            }
             
             _selectedObject.SetValue(selectable);
         }
